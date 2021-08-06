@@ -1,0 +1,19 @@
+.searchForm {
+    width: 44vw;
+    margin: 2% auto;
+    padding: 0 2%;
+    border-radius: 10px;
+    border: 2px solid cadetblue;
+
+    color: #527ccb;
+
+    input {
+        border: none;
+        padding: 0 2%;
+        border-radius: inherit;
+
+        &focus {
+            outline: none;
+        }
+    }
+}

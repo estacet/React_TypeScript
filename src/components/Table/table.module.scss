@@ -1,0 +1,46 @@
+.userListTable {
+    width: 44vw;
+    margin: 0 auto;
+    border-radius: 10px;
+    border: 2px solid cadetblue;
+
+    border-collapse: inherit !important;
+
+    thead {
+        tr {
+            background-color: #f2f2f2 !important;
+
+            .sortButton {
+                border: none;
+            }
+        }
+    }
+
+    tr {
+        &:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        &:nth-child(odd) {
+            background-color: white;
+        }
+
+        th, td {
+            height: 50px;
+            text-align: left;
+            padding: 4px 8px;
+
+            .userPublicationsQuantity {
+                font-size: small;
+                color: cadetblue;
+            }
+        }
+    }
+
+}
+
+/*
+img {
+    width: 40px;
+    height: 44px;
+}*/
