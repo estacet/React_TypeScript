@@ -8,11 +8,12 @@
     color: #527ccb;
 
     input {
+        width: 90%;
         border: none;
         padding: 0 2%;
         border-radius: inherit;
 
-        &focus {
+        &:focus {
             outline: none;
         }
     }
