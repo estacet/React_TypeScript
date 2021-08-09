@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 import UserContext from "../../contexts/UserContext";
 import { UserInterface } from "../../interfaces";
-import s from './table.module.scss'
+import s from './Table.module.scss'
 
 export const TableItem: React.FC = () => {
     const {users, paginatedUsers} = useContext(UserContext);

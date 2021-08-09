@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
 import PaginationContext from "../../contexts/PaginationContext";
-import s from './pagination.module.scss'
+import s from './Pagination.module.scss'
 
 export const Pagination: React.FC = () => {
     const {currentPage, updatePage, totalItems, updatedUsers, itemsPerPage} = useContext(PaginationContext);
@@ -32,15 +32,17 @@ export const Pagination: React.FC = () => {
             <ul className="pagination">
                 <li
                     className={showPrevButton() ? 'page-item' : s.hidden}
+                    data-testid="prevPage"
                     onClick={prevPage}
                 >
                     <a className="page-link">
                         <span >&laquo;</span>
                     </a>
                 </li>
-                <li className="page-item"><a className="page-link">{currentPage}</a></li>
+                <li className="page-item"><a data-testid="currentPage" className="page-link">{currentPage}</a></li>
                 <li
                     onClick={nextPage}
+                    data-testid="nextPage"
                     className={showNextButton() ? 'page-item' : s.hidden}
                 >
                     <a className="page-link">

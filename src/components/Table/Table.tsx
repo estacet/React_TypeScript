@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 import { TableItem } from "./TableItem";
 import UserContext from "../../contexts/UserContext";
-import s from './table.module.scss';
+import s from './Table.module.scss';
 
 export const Table: React.FC = () => {
     const {updateUsers, updatedUsers } = useContext(UserContext);

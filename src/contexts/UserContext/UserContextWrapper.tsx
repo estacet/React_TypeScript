@@ -21,7 +21,7 @@ export const UserContextWrapper: React.FC<Props> = ({ users, children }) => {
     }
 
     return (
-        <UserContext.Provider value={{users, itemsPerPage, currentPage, setPaginatedUsers, setCurrentPage, updateUsers, updatedUsers, paginatedUsers}}>
+        <UserContext.Provider data-testid="contextProvider" value={{users, itemsPerPage, currentPage, setPaginatedUsers, setCurrentPage, updateUsers, updatedUsers, paginatedUsers}}>
             {children}
         </UserContext.Provider>
     );

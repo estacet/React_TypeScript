@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
 import UserContext from "../../contexts/UserContext";
-import s from './searchForm.module.scss'
+import s from './SearchForm.module.scss'
 import { UserInterface } from "../../interfaces";
 
 export const SearchForm: React.FC = () => {
@@ -20,6 +20,7 @@ export const SearchForm: React.FC = () => {
             <i className="bi bi-search "></i>
             <input
                 placeholder="Search by name"
+                data-testid="searchForm"
                 onChange={(e) => {
                     filterUsersByName(e.target.value)
                 }}
